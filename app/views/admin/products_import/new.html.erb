@@ -1,0 +1,5 @@
+<h1>Import CSV file with products</h1>
+<%= form_for 'products_import', url: admin_products_import_index_path do |f| %>
+  <%= f.file_field :file %>
+  <%= f.submit "Import", class: "btn btn-success" %>
+<% end %>
